@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    .loader {
+      margin-left: 43%;
+      border: 16px solid #f3f3f3;
+      border-radius: 50%;
+      border-top: 16px solid #3498db;
+      width: 120px;
+      height: 120px;
+      -webkit-animation: spin 2s linear infinite; /* Safari */
+      animation: spin 2s linear infinite;
+    }
+
+    /* Safari */
+    @-webkit-keyframes spin {
+      0% { -webkit-transform: rotate(0deg); }
+      100% { -webkit-transform: rotate(360deg); }
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@2.1.1/dist/tesseract.min.js"></script>
+  </head>
+  <body>
+    <div id='demo-content' style="border: 3px solid green; height: auto; min-height: 100px; overflow: auto;">
+      <div style="border: 3px solid red; width: 100%; height: 150px; text-align: center;">
+          <h2>Image Capture Clipboard(ctrl+cmd+shift+4) & Paste(cmd+v)</h2>
+          <img id='input-img' style="max-width: 100%; max-height: 100%;"/>
+      </div>
+      <div style="text-align: center;">
+          <img id='arrow' src="./arrow.jpg" style="width: 50px; height: 50px; vertical-align: middle;"/>
+      </div> 
+      <div style="border: 3px solid black; width: 100%; height: 150px;">
+          <div id='output-txt' style="text-align: center;"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
