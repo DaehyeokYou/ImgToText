@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+   
+    "name": "Go to website by capturing",
+    "description": "we can convert long long website url image to hyper text!",
+    "version": "1.0",
+   
+    "browser_action": {
+      "default_icon": "icon.png",
+      "default_popup": "popup.html"
+    },
+    "web_accessible_resources": [
+      "js/worker.min.js",
+      "js/tessearct-core.wasm.js",
+      "traineddata/*.traineddata.gz"
+    ],  
+    "permissions": [
+    ]
+  }
