@@ -1,4 +1,6 @@
 # ImgToText
+*현재 tesseract Library이상으로 실행 안됨
+
 ImgToText
 
 skill : html, javascript, tesseract
